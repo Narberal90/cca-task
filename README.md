@@ -10,6 +10,7 @@ This project implements the Canonical Correlation Analysis (CCA) algorithm to an
   - numpy
   - matplotlib
   - scikit-learn
+  - **Git Large File Storage (LFS)** — required to download the large dataset file (`archive.zip`)
 
 ## Setting Up the Environment
 
@@ -32,9 +33,12 @@ Follow these steps to set up the environment:
 
 3. **Install the required dependencies:**
 
-    ```
+    ```bash
     pip install -r requirements.txt
     ```
+
+4. **Install Git LFS** (if not already installed):
+    Follow the instructions [here](https://git-lfs.github.com/).
 
 ## File Structure
 - `archive.zip` — data with hotel reviews.
@@ -43,8 +47,9 @@ Follow these steps to set up the environment:
 
 ## Usage
 
-1. Open the `cca_analysis.ipynb` notebook.
-2. Run the code.
+1. Download the repository.
+2. Open the `cca_analysis.ipynb` notebook.
+3. Run the code.
 
 ## Algorithm Details
 
@@ -64,4 +69,3 @@ Follow these steps to set up the environment:
 3. **Visualization**:
    - Scatter plots are generated for the two canonical components, showing the relationship between review text properties (lengths of reviews) and ratings (reviewer score and average score).
    - The correlation values for each canonical component are printed in the console for reference.
-
